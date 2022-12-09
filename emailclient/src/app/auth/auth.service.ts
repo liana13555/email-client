@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from "rxjs";
 import { tap } from "rxjs/operators";
 
-interface usernameAvailableResponse {
+interface UsernameAvailableResponse {
   available: boolean
 }
 
@@ -37,7 +37,7 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   usernameAvailable(username: string) {
-    return this.http.post<usernameAvailableResponse>(`${this.rootUrl}/auth/username`, {
+    return this.http.post<UsernameAvailableResponse>(`${this.rootUrl}/auth/username`, {
       username: username
     })
   }
