@@ -10,7 +10,7 @@ import { Email } from "../email";
   styleUrls: ['./email-show.component.css']
 })
 export class EmailShowComponent implements OnInit {
-  email!: Email;
+  email: Email;
 
   constructor(
     private route: ActivatedRoute,
