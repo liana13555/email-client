@@ -39,20 +39,6 @@ export class EmailFormComponent implements OnInit {
     has been marked as disabled. */
     
     this.emailSubmit.emit(this.emailForm.value)
-
-    // this.authService.signup(this.authForm.value).subscribe({
-    //   next: (response) => {
-    //     // Navigate to some other route
-    //    this.router.navigateByUrl('/inbox')    
-    //   },
-    //   error: (err) => {
-    //     if (!err.status) {
-    //       this.authForm.setErrors({ noConnection: true})
-    //     } else {
-    //       this.authForm.setErrors({ unknownError: true})
-    //     }       
-    //   }
-    // })
   }
 
 }
